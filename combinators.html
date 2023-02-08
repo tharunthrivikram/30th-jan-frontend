@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*.parent{
+			color:red;
+		}*/
+		/*descandent*/
+		.demo p{
+			background-color: red;
+		}
+		/*child selector*/
+		.demo>p{
+			background-color: orange;
+		}
+		/*adjacent selector*/
+		.demo+h2{
+			background-color: red;
+		}
+		/*general sibling selector*/
+		.demo~h2{
+			background-color: violet;
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="parent">
+		<p>Hello</p>
+		<h1>Codegnan</h1>
+		<span>full stack development</span>
+	</div>-->
+		<h2>welcome to mern stack</h2>
+		<section class="demo">
+			<h1>welcome to mern stack</h1>
+			<P>this is para one child to section
+			</P>
+			<P>this is para two child to section
+			</P>
+			<div>
+				<h1>this is h1 grand child to section and child to div</h1>
+				<p>this is grand child to section and child to div</p>
+			 </div>
+			 <p>this is para three child to section</p>
+			</section>
+			<h2>welcome to mern stack</h2>
+			<P>paragraph</P>
+			<h2>this general sibling selector</h2>
+
+</body>
+</html>
